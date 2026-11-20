@@ -114,7 +114,7 @@ RSI literature [1] discusses open-ended capability growth via self-generated tra
 
 **Task:** Given reactant SMILES and reaction conditions (type, reagents, solvent, temperature, time), predict the major product SMILES.
 
-**Evaluation:** Exact string match after canonical SMILES normalization. No partial credit.
+**Evaluation:** Exact string match after canonical SMILES [4] normalization. No partial credit.
 
 **Dataset split (v9\_g1prime):**
 
@@ -570,7 +570,7 @@ To confirm the 7B main effect reflects the same data-centric mechanism at smalle
 
 ### D. Clean External Set: Full Sample and Type Table
 
-All 31 samples (with full SMILES, reaction types, and audit metadata) are provided in the Supplementary Material.
+All 31 samples (with full SMILES, reaction types, and audit metadata) are provided in the public replication package at `data/holdout_clean/holdout_n31.json` (GitHub / Zenodo archive cited in Data and Code Availability).
 
 ### E. Negative Result Trajectories
 
