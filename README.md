@@ -6,8 +6,7 @@
 
 **Public repository:** https://github.com/ldd19990713-coder/rsi-failure-directed-curation
 
-[!10.5281/zenodo.24391973(https://zenodo.org/badge/DOI/10.5281/zenodo.24391973.svg)](https://doi.org/10.5281/zenodo.24391973)
-*(Zenodo DOI appears after enabling GitHub→Zenodo and publishing a Release.)*
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24391973.svg)](https://doi.org/10.5281/zenodo.24391973)
 
 ---
 
