@@ -1,4 +1,4 @@
-﻿# Failure-Directed Data Curation for Few-Shot Reaction Product Prediction: In-Domain Gains under Protocol Fidelity without Cross-Split Generalization
+# Failure-Directed Data Curation for Few-Shot Reaction Product Prediction: In-Domain Gains under Protocol Fidelity without Cross-Split Generalization
 
 ***
 
@@ -620,7 +620,7 @@ This work uses publicly available chemical reaction datasets and does not involv
 
 ## Data and Code Availability
 
-The clean external evaluation set (n=31, with full SMILES, reaction-type labels, and reaction-key audit metadata), the v9\_g1prime train/eval split, recipe hashes, evaluation and leakage-audit scripts, and the full replication package (training, augmentation, negative-control, and 1.5B mechanism-validation runners) are publicly archived at **https://github.com/ldd19990713-coder/rsi-failure-directed-curation** (Zenodo DOI: **[DOI]**). The Mermaid source and rendering script for Figure 1, and the matplotlib source for Appendix Figures E1–E2, are included under `figures/`. The base model (Qwen2.5-7B) is publicly available on Hugging Face; trained LoRA adapters can be provided upon request.
+The clean external evaluation set (n=31, with full SMILES, reaction-type labels, and reaction-key audit metadata), the v9\_g1prime train/eval split, recipe hashes, evaluation and leakage-audit scripts, and the full replication package (training, augmentation, negative-control, and 1.5B mechanism-validation runners) are publicly archived at **https://github.com/ldd19990713-coder/rsi-failure-directed-curation** (Zenodo DOI: **10.5281/zenodo.24391973**). The Mermaid source and rendering script for Figure 1, and the matplotlib source for Appendix Figures E1–E2, are included under `figures/`. The base model (Qwen2.5-7B) is publicly available on Hugging Face; trained LoRA adapters can be provided upon request.
 
 ***
 

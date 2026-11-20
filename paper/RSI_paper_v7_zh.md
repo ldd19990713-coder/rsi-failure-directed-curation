@@ -1,4 +1,4 @@
-﻿# 少样本反应产物预测中的失败驱动数据策展：协议保真下的域内增益与跨划分零泛化
+# 少样本反应产物预测中的失败驱动数据策展：协议保真下的域内增益与跨划分零泛化
 
 **Failure-Directed Data Curation for Few-Shot Reaction Product Prediction: In-Domain Gains under Protocol Fidelity without Cross-Split Generalization**
 
@@ -624,7 +624,7 @@ RSI 文献 [1] 讨论经由自生成训练信号的开放能力增长。强主�
 
 ## 数据与代码可用性
 
-干净外集（n=31，含完整 SMILES、反应类型标签与反应键审计元数据）、v9\_g1prime 训练/评测划分、配方哈希、评测与泄露审计脚本，以及完整复现代码包（训练、增广、负对照、1.5B 机制验证运行器）已公开归档至 **https://github.com/ldd19990713-coder/rsi-failure-directed-curation**（Zenodo DOI：**[DOI]**）。图 1 的 Mermaid 源码与渲染脚本，以及附录图 E1–E2 的 matplotlib 源码，均置于仓库 `figures/` 目录下。基座模型（Qwen2.5-7B）可在 Hugging Face 公开获取；已训 LoRA 适配器可应请求提供。
+干净外集（n=31，含完整 SMILES、反应类型标签与反应键审计元数据）、v9\_g1prime 训练/评测划分、配方哈希、评测与泄露审计脚本，以及完整复现代码包（训练、增广、负对照、1.5B 机制验证运行器）已公开归档至 **https://github.com/ldd19990713-coder/rsi-failure-directed-curation**（Zenodo DOI：**10.5281/zenodo.24391973**）。图 1 的 Mermaid 源码与渲染脚本，以及附录图 E1–E2 的 matplotlib 源码，均置于仓库 `figures/` 目录下。基座模型（Qwen2.5-7B）可在 Hugging Face 公开获取；已训 LoRA 适配器可应请求提供。
 
 ***
 

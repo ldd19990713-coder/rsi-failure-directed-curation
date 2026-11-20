@@ -6,7 +6,7 @@
 
 **Public repository:** https://github.com/ldd19990713-coder/rsi-failure-directed-curation
 
-[![DOI](https://zenodo.org/badge/DOI/[DOI].svg)](https://doi.org/[DOI])
+[!10.5281/zenodo.24391973(https://zenodo.org/badge/DOI/10.5281/zenodo.24391973.svg)](https://doi.org/10.5281/zenodo.24391973)
 *(Zenodo DOI appears after enabling GitHub→Zenodo and publishing a Release.)*
 
 ---
@@ -208,7 +208,7 @@ E1/E2 require only `matplotlib` and `numpy`.
          In-Domain Gains under Protocol Fidelity without Cross-Split Generalization},
   author={Li, Dong and Wei, Yixiong and Luo, Shi and Yuan, Yingjun},
   year={2026},
-  doi={[DOI]}
+  doi={10.5281/zenodo.24391973}
 }
 ```
 

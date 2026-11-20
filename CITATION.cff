@@ -1,4 +1,4 @@
-﻿cff-version: 1.2.0
+cff-version: 1.2.0
 title: "Failure-Directed Data Curation for Few-Shot Reaction Product Prediction"
 message: >
   If you use this software, please cite it using the metadata from this file.
@@ -27,7 +27,7 @@ contact:
     orcid: https://orcid.org/0009-0009-8133-5796
     affiliation: "Zhejiang Lab, Hangzhou, China"
 repository-code: "https://github.com/ldd19990713-coder/rsi-failure-directed-curation"
-url: "https://doi.org/[DOI]"
+url: "https://doi.org/10.5281/zenodo.24391973"
 abstract: >
   Replication package for the paper "Failure-Directed Data Curation for
   Few-Shot Reaction Product Prediction: In-Domain Gains under Protocol
