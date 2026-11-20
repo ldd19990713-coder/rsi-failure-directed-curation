@@ -4,7 +4,10 @@
 > Curation for Few-Shot Reaction Product Prediction: In-Domain Gains under
 > Protocol Fidelity without Cross-Split Generalization."*
 
-[![DOI](https://zenodo.org/badge/[DOI].svg)](https://doi.org/[DOI])
+**Public repository:** https://github.com/ldd19990713-coder/rsi-failure-directed-curation
+
+[![DOI](https://zenodo.org/badge/DOI/[DOI].svg)](https://doi.org/[DOI])
+*(Zenodo DOI appears after enabling GitHub→Zenodo and publishing a Release.)*
 
 ---
 
