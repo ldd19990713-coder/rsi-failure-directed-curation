@@ -1,0 +1,12 @@
+{
+  "7B": {
+    "recipe_sha256": "9e3788dd7a2eb89d66a1b403d5c5b7c425d583adf7c799c35b761b57fbf7f809",
+    "config": "configs/recipe_7b.yaml",
+    "lock_doc": "configs/p2b_7b_lock.md"
+  },
+  "1.5B": {
+    "recipe_sha256": "2a965c392fee090d794a3857a03a69e36dbf16276e6d534a7b78c77a60391dc3",
+    "config": "configs/recipe_1.5b.yaml",
+    "legacy_manifest": "configs/recipe_hash.txt"
+  }
+}

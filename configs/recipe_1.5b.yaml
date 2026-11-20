@@ -1,0 +1,33 @@
+# Locked 1.5B recipe (mechanism validation; Appendix C)
+# Recipe hash: 2a965c392fee090d794a3857a03a69e36dbf16276e6d534a7b78c77a60391dc3
+
+model:
+  name: "Qwen2.5-1.5B"
+  hf_id: "Qwen/Qwen2.5-1.5B"
+  precision: "float32"
+  trust_remote_code: true
+
+data:
+  version: "v9_g1prime"
+  train_path: "data/v9_g1prime/train.json"
+  eval_path: "data/v9_g1prime/eval.json"
+  train_samples: 46
+  eval_samples: 97
+
+training:
+  learning_rate: 5.0e-6
+  lr_decay_factor: 0.85
+  eta_min_ratio: 0.1
+  batch_size: 2
+  num_rounds: 7
+  epochs_per_round: 3
+  max_seq_length: 256
+  optimizer: "AdamW"
+  weight_decay: 0.01
+  seeds: [41, 42, 43, 44, 45]
+
+augmentation:
+  strategy: "a_fail"
+  K: 1.0
+
+recipe_hash: "2a965c392fee090d794a3857a03a69e36dbf16276e6d534a7b78c77a60391dc3"

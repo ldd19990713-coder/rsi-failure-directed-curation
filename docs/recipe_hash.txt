@@ -1,0 +1,16 @@
+# V5 G1' Canonical Recipe - Hash Manifest
+# Generated: 2026-11-12
+
+# Component hashes
+script_sha256: 5bca4e3881d7d437da046d2b15b0bf5fd2a49c00d17b834f1a6f7badc6e47cad
+yaml_sha256:   51e0398b17a29cb43ac000435496acbb6457e3a1d3e3a28fb13b811a6813d0f7
+data_sha256:   ac3c31a2dc6ca10f92101c72816152a0d17ce5030e39fae9433e407af4ad43a4
+
+# Combined recipe hash
+recipe_sha256: 2a965c392fee090d794a3857a03a69e36dbf16276e6d534a7b78c77a60391dc3
+
+# File paths
+script: scripts/canonical/train_canonical.py
+config: configs/canonical/v5_g1prime_canonical.yaml
+data_train: data/v9_g1prime/train_reactions_g1prime.json
+data_eval: data/v9_g1prime/eval_reactions_g1prime.json

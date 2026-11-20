@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Models / large binaries (DO NOT commit model weights)
+models/
+*.bin
+*.safetensors
+*.pt
+*.ckpt
+*.onnx
+
+# Training runs / checkpoints
+runs/
+checkpoints/
+wandb/
+outputs/
+tensorboard/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Data too large for GitHub (>100 MB)
+# Use git-lfs for model weights if needed:
+#   git lfs install
+#   git lfs track "*.safetensors"

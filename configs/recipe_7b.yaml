@@ -1,0 +1,47 @@
+# Locked 7B + LoRA recipe (primary paper result)
+# Recipe hash: 9e3788dd7a2eb89d66a1b403d5c5b7c425d583adf7c799c35b761b57fbf7f809
+
+model:
+  name: "Qwen2.5-7B"
+  hf_id: "Qwen/Qwen2.5-7B"
+  precision: "bfloat16"   # fp16 forbidden (NaN)
+  trust_remote_code: true
+
+lora:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+  target_modules:
+    - q_proj
+    - v_proj
+    - k_proj
+    - o_proj
+    - gate_proj
+    - up_proj
+    - down_proj
+
+data:
+  version: "v9_g1prime"
+  train_path: "data/v9_g1prime/train.json"
+  eval_path: "data/v9_g1prime/eval.json"
+  train_samples: 46
+  eval_samples: 97
+
+training:
+  learning_rate: 5.0e-5
+  lr_decay_factor: 0.85          # per-round: 0.85^(r-2)
+  eta_min_ratio: 0.1             # CosineAnnealing η_min/η_max
+  batch_size: 1                  # 40GB GPU; no grad accumulation
+  num_rounds: 7
+  epochs_per_round: 3
+  max_seq_length: 256
+  optimizer: "AdamW"
+  weight_decay: 0.01
+  seeds: [41, 42, 43, 44, 45]
+
+augmentation:
+  strategy: "a_fail"             # failure-directed; control = a_rand
+  K: 1.0
+  prompt_variants: ["condition", "hint", "format"]
+
+recipe_hash: "9e3788dd7a2eb89d66a1b403d5c5b7c425d583adf7c799c35b761b57fbf7f809"

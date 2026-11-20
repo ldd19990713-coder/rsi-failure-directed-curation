@@ -1,0 +1,18 @@
+{
+  "version": "v9_g1prime",
+  "created": "2026-11-06T07:52:53.277714",
+  "train_size": 46,
+  "eval_size": 97,
+  "eval_source": "eval_reactions_100 + eval_reactions_100_consistent \u5408\u5e76\u53bb\u91cd",
+  "eval_renumbered": true,
+  "difficulty_distribution": {
+    "easy": 40,
+    "medium": 42,
+    "hard": 15
+  },
+  "leakage_checks": {
+    "id_intersection": 0,
+    "product_smiles_intersection": 0,
+    "status": "PASS"
+  }
+}

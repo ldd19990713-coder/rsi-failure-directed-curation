@@ -1,0 +1,627 @@
+[
+  {
+    "id": "rxn_0000",
+    "reaction_type": "addition",
+    "reactants_smiles": [
+      "c1ccccc1",
+      "[H][H]"
+    ],
+    "product_smiles": "C1CCCCC1",
+    "conditions": "Pt, H2, 100 atm, 200°C",
+    "difficulty": "easy",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: addition\nReactants: c1ccccc1 + [H][H]\nConditions: Pt, H2, 100 atm, 200°C\nDifficulty: easy\nProvide the product SMILES.",
+    "target_text": "C1CCCCC1",
+    "reaction_key": "c1ccccc1.[H][H]>>C1CCCCC1"
+  },
+  {
+    "id": "rxn_0001",
+    "reaction_type": "substitution_SN2",
+    "reactants_smiles": [
+      "CI",
+      "[N-]#[C-]"
+    ],
+    "product_smiles": "CC#N",
+    "conditions": "NaCN, DMF, 60°C",
+    "difficulty": "medium",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: substitution_SN2\nReactants: CI + [N-]#[C-]\nConditions: NaCN, DMF, 60°C\nDifficulty: medium\nProvide the product SMILES.",
+    "target_text": "CC#N",
+    "reaction_key": "CI.[N-]#[C-]>>CC#N"
+  },
+  {
+    "id": "rxn_0002",
+    "reaction_type": "hydrolysis",
+    "reactants_smiles": [
+      "CC(=O)N",
+      "O"
+    ],
+    "product_smiles": "CC(=O)O",
+    "conditions": "HCl, H2O, reflux, 6h",
+    "difficulty": "easy",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: hydrolysis\nReactants: CC(=O)N + O\nConditions: HCl, H2O, reflux, 6h\nDifficulty: easy\nProvide the product SMILES.",
+    "target_text": "CC(=O)O",
+    "reaction_key": "CC(=O)N.O>>CC(=O)O"
+  },
+  {
+    "id": "rxn_0003",
+    "reaction_type": "Baeyer-Villiger",
+    "reactants_smiles": [
+      "O=C1CCCCC1"
+    ],
+    "product_smiles": "O=C1OCCCCC1",
+    "conditions": "mCPBA, DCM, rt",
+    "difficulty": "hard",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: Baeyer-Villiger\nReactants: O=C1CCCCC1\nConditions: mCPBA, DCM, rt\nDifficulty: hard\nProvide the product SMILES.",
+    "target_text": "O=C1OCCCCC1",
+    "reaction_key": "O=C1CCCCC1>>O=C1OCCCCC1"
+  },
+  {
+    "id": "rxn_0004",
+    "reaction_type": "oxidation",
+    "reactants_smiles": [
+      "CC(O)c1ccccc1"
+    ],
+    "product_smiles": "CC(=O)c1ccccc1",
+    "conditions": "PCC, DCM, rt",
+    "difficulty": "easy",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: oxidation\nReactants: CC(O)c1ccccc1\nConditions: PCC, DCM, rt\nDifficulty: easy\nProvide the product SMILES.",
+    "target_text": "CC(=O)c1ccccc1",
+    "reaction_key": "CC(O)c1ccccc1>>CC(=O)c1ccccc1"
+  },
+  {
+    "id": "rxn_0005",
+    "reaction_type": "Claisen",
+    "reactants_smiles": [
+      "CC(=O)OCC"
+    ],
+    "product_smiles": "CC(=O)CC(=O)OCC",
+    "conditions": "NaOEt, EtOH, reflux",
+    "difficulty": "hard",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: Claisen\nReactants: CC(=O)OCC\nConditions: NaOEt, EtOH, reflux\nDifficulty: hard\nProvide the product SMILES.",
+    "target_text": "CC(=O)CC(=O)OCC",
+    "reaction_key": "CC(=O)OCC>>CC(=O)CC(=O)OCC"
+  },
+  {
+    "id": "rxn_0006",
+    "reaction_type": "halogenation",
+    "reactants_smiles": [
+      "CC(=O)c1ccccc1"
+    ],
+    "product_smiles": "CC(=O)c1cccc(Br)c1",
+    "conditions": "Br2, AcOH, 25°C",
+    "difficulty": "medium",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: halogenation\nReactants: CC(=O)c1ccccc1\nConditions: Br2, AcOH, 25°C\nDifficulty: medium\nProvide the product SMILES.",
+    "target_text": "CC(=O)c1cccc(Br)c1",
+    "reaction_key": "CC(=O)c1ccccc1>>CC(=O)c1cccc(Br)c1"
+  },
+  {
+    "id": "rxn_0007",
+    "reaction_type": "Swern",
+    "reactants_smiles": [
+      "CC(O)C"
+    ],
+    "product_smiles": "CC(=O)C",
+    "conditions": "DMSO, (COCl)2, Et3N, DCM, -78°C",
+    "difficulty": "hard",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: Swern\nReactants: CC(O)C\nConditions: DMSO, (COCl)2, Et3N, DCM, -78°C\nDifficulty: hard\nProvide the product SMILES.",
+    "target_text": "CC(=O)C",
+    "reaction_key": "CC(O)C>>CC(=O)C"
+  },
+  {
+    "id": "rxn_0008",
+    "reaction_type": "elimination",
+    "reactants_smiles": [
+      "OC1CCCCC1"
+    ],
+    "product_smiles": "C=C1CCCCC1",
+    "conditions": "H2SO4 conc., 165°C",
+    "difficulty": "medium",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: elimination\nReactants: OC1CCCCC1\nConditions: H2SO4 conc., 165°C\nDifficulty: medium\nProvide the product SMILES.",
+    "target_text": "C=C1CCCCC1",
+    "reaction_key": "OC1CCCCC1>>C=C1CCCCC1"
+  },
+  {
+    "id": "rxn_0009",
+    "reaction_type": "epoxidation",
+    "reactants_smiles": [
+      "CC=CC"
+    ],
+    "product_smiles": "CC1OC1C",
+    "conditions": "mCPBA, DCM, 0°C",
+    "difficulty": "medium",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: epoxidation\nReactants: CC=CC\nConditions: mCPBA, DCM, 0°C\nDifficulty: medium\nProvide the product SMILES.",
+    "target_text": "CC1OC1C",
+    "reaction_key": "CC=CC>>CC1OC1C"
+  },
+  {
+    "id": "rxn_0010",
+    "reaction_type": "esterification",
+    "reactants_smiles": [
+      "CCCCC(=O)O",
+      "CCO"
+    ],
+    "product_smiles": "CCCCC(=O)OCC",
+    "conditions": "H2SO4 cat., reflux, 2h",
+    "difficulty": "easy",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: esterification\nReactants: CCCCC(=O)O + CCO\nConditions: H2SO4 cat., reflux, 2h\nDifficulty: easy\nProvide the product SMILES.",
+    "target_text": "CCCCC(=O)OCC",
+    "reaction_key": "CCCCC(=O)O.CCO>>CCCCC(=O)OCC"
+  },
+  {
+    "id": "rxn_0011",
+    "reaction_type": "Friedel-Crafts",
+    "reactants_smiles": [
+      "CC(=O)c1ccccc1",
+      "CCCl"
+    ],
+    "product_smiles": "CC(=O)c1cccc(CC)c1",
+    "conditions": "AlCl3, 25°C",
+    "difficulty": "medium",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: Friedel-Crafts\nReactants: CC(=O)c1ccccc1 + CCCl\nConditions: AlCl3, 25°C\nDifficulty: medium\nProvide the product SMILES.",
+    "target_text": "CC(=O)c1cccc(CC)c1",
+    "reaction_key": "CC(=O)c1ccccc1.CCCl>>CC(=O)c1cccc(CC)c1"
+  },
+  {
+    "id": "rxn_0012",
+    "reaction_type": "Diels-Alder",
+    "reactants_smiles": [
+      "C=CC=C",
+      "O=Cc1ccccc1"
+    ],
+    "product_smiles": "O=C1CCCC=C1c2ccccc2",
+    "conditions": "CHCl3, 60°C",
+    "difficulty": "hard",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: Diels-Alder\nReactants: C=CC=C + O=Cc1ccccc1\nConditions: CHCl3, 60°C\nDifficulty: hard\nProvide the product SMILES.",
+    "target_text": "O=C1CCCC=C1c2ccccc2",
+    "reaction_key": "C=CC=C.O=Cc1ccccc1>>O=C1CCCC=C1c2ccccc2"
+  },
+  {
+    "id": "rxn_0013",
+    "reaction_type": "aldol",
+    "reactants_smiles": [
+      "CC(=O)C"
+    ],
+    "product_smiles": "CC(=O)CC(C)(O)C",
+    "conditions": "Ba(OH)2, H2O, 0°C",
+    "difficulty": "hard",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: aldol\nReactants: CC(=O)C\nConditions: Ba(OH)2, H2O, 0°C\nDifficulty: hard\nProvide the product SMILES.",
+    "target_text": "CC(=O)CC(C)(O)C",
+    "reaction_key": "CC(=O)C>>CC(=O)CC(C)(O)C"
+  },
+  {
+    "id": "rxn_0014",
+    "reaction_type": "hydrolysis",
+    "reactants_smiles": [
+      "CCOC(=O)CC(=O)OCC"
+    ],
+    "product_smiles": "OC(=O)CC(=O)O",
+    "conditions": "NaOH, H2O, reflux, 8h",
+    "difficulty": "medium",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: hydrolysis\nReactants: CCOC(=O)CC(=O)OCC\nConditions: NaOH, H2O, reflux, 8h\nDifficulty: medium\nProvide the product SMILES.",
+    "target_text": "OC(=O)CC(=O)O",
+    "reaction_key": "CCOC(=O)CC(=O)OCC>>OC(=O)CC(=O)O"
+  },
+  {
+    "id": "rxn_0015",
+    "reaction_type": "Mannich",
+    "reactants_smiles": [
+      "CC(=O)C",
+      "O=CC",
+      "CN"
+    ],
+    "product_smiles": "CC(=O)C(C)CN",
+    "conditions": "HCl cat., EtOH, reflux",
+    "difficulty": "hard",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: Mannich\nReactants: CC(=O)C + O=CC + CN\nConditions: HCl cat., EtOH, reflux\nDifficulty: hard\nProvide the product SMILES.",
+    "target_text": "CC(=O)C(C)CN",
+    "reaction_key": "CC(=O)C.O=CC.CN>>CC(=O)C(C)CN"
+  },
+  {
+    "id": "rxn_0016",
+    "reaction_type": "Friedel-Crafts",
+    "reactants_smiles": [
+      "c1ccccc1",
+      "CC(=O)O"
+    ],
+    "product_smiles": "CC(=O)c1ccccc1",
+    "conditions": "AlCl3, PCl3, 160°C",
+    "difficulty": "medium",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: Friedel-Crafts\nReactants: c1ccccc1 + CC(=O)O\nConditions: AlCl3, PCl3, 160°C\nDifficulty: medium\nProvide the product SMILES.",
+    "target_text": "CC(=O)c1ccccc1",
+    "reaction_key": "c1ccccc1.CC(=O)O>>CC(=O)c1ccccc1"
+  },
+  {
+    "id": "rxn_0017",
+    "reaction_type": "Clemmensen",
+    "reactants_smiles": [
+      "CC(=O)C"
+    ],
+    "product_smiles": "CCC",
+    "conditions": "Zn(Hg), HCl conc., reflux",
+    "difficulty": "hard",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: Clemmensen\nReactants: CC(=O)C\nConditions: Zn(Hg), HCl conc., reflux\nDifficulty: hard\nProvide the product SMILES.",
+    "target_text": "CCC",
+    "reaction_key": "CC(=O)C>>CCC"
+  },
+  {
+    "id": "rxn_0018",
+    "reaction_type": "reduction",
+    "reactants_smiles": [
+      "O=CC1=CC=CC=C1"
+    ],
+    "product_smiles": "OCC1=CC=CC=C1",
+    "conditions": "NaBH4, EtOH, rt",
+    "difficulty": "easy",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: reduction\nReactants: O=CC1=CC=CC=C1\nConditions: NaBH4, EtOH, rt\nDifficulty: easy\nProvide the product SMILES.",
+    "target_text": "OCC1=CC=CC=C1",
+    "reaction_key": "O=CC1=CC=CC=C1>>OCC1=CC=CC=C1"
+  },
+  {
+    "id": "rxn_0019",
+    "reaction_type": "Mitsunobu",
+    "reactants_smiles": [
+      "OC1CCCCC1",
+      "OC(=O)c1ccccc1"
+    ],
+    "product_smiles": "c1ccccc1C(=O)OC1CCCCC1",
+    "conditions": "PPh3, DEAD, THF, 0°C",
+    "difficulty": "hard",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: Mitsunobu\nReactants: OC1CCCCC1 + OC(=O)c1ccccc1\nConditions: PPh3, DEAD, THF, 0°C\nDifficulty: hard\nProvide the product SMILES.",
+    "target_text": "c1ccccc1C(=O)OC1CCCCC1",
+    "reaction_key": "OC1CCCCC1.OC(=O)c1ccccc1>>c1ccccc1C(=O)OC1CCCCC1"
+  },
+  {
+    "id": "rxn_0020",
+    "reaction_type": "esterification",
+    "reactants_smiles": [
+      "CC(=O)O",
+      "CCCCCO"
+    ],
+    "product_smiles": "CCCCCOC(=O)C",
+    "conditions": "H2SO4 cat., reflux, 3h",
+    "difficulty": "easy",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: esterification\nReactants: CC(=O)O + CCCCCO\nConditions: H2SO4 cat., reflux, 3h\nDifficulty: easy\nProvide the product SMILES.",
+    "target_text": "CCCCCOC(=O)C",
+    "reaction_key": "CC(=O)O.CCCCCO>>CCCCCOC(=O)C"
+  },
+  {
+    "id": "rxn_0021",
+    "reaction_type": "oxidation",
+    "reactants_smiles": [
+      "OCC1=CC=CC=C1"
+    ],
+    "product_smiles": "O=CC1=CC=CC=C1",
+    "conditions": "PCC, DCM, rt",
+    "difficulty": "easy",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: oxidation\nReactants: OCC1=CC=CC=C1\nConditions: PCC, DCM, rt\nDifficulty: easy\nProvide the product SMILES.",
+    "target_text": "O=CC1=CC=CC=C1",
+    "reaction_key": "OCC1=CC=CC=C1>>O=CC1=CC=CC=C1"
+  },
+  {
+    "id": "rxn_0022",
+    "reaction_type": "oxidation",
+    "reactants_smiles": [
+      "CC(C)(C)O"
+    ],
+    "product_smiles": "CC(=O)C",
+    "conditions": "H2CrO4, H2O, acetone",
+    "difficulty": "medium",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: oxidation\nReactants: CC(C)(C)O\nConditions: H2CrO4, H2O, acetone\nDifficulty: medium\nProvide the product SMILES.",
+    "target_text": "CC(=O)C",
+    "reaction_key": "CC(C)(C)O>>CC(=O)C"
+  },
+  {
+    "id": "rxn_0023",
+    "reaction_type": "Wittig",
+    "reactants_smiles": [
+      "O=CC1=CC=CC=C1",
+      "P(=C)(c1ccccc1)(c2ccccc2)c3ccccc3"
+    ],
+    "product_smiles": "C=C(c1ccccc1)c2ccccc2",
+    "conditions": "THF, 0°C→rt, N2",
+    "difficulty": "hard",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: Wittig\nReactants: O=CC1=CC=CC=C1 + P(=C)(c1ccccc1)(c2ccccc2)c3ccccc3\nConditions: THF, 0°C→rt, N2\nDifficulty: hard\nProvide the product SMILES.",
+    "target_text": "C=C(c1ccccc1)c2ccccc2",
+    "reaction_key": "O=CC1=CC=CC=C1.P(=C)(c1ccccc1)(c2ccccc2)c3ccccc3>>C=C(c1ccccc1)c2ccccc2"
+  },
+  {
+    "id": "rxn_0024",
+    "reaction_type": "reduction",
+    "reactants_smiles": [
+      "CC=CC=O"
+    ],
+    "product_smiles": "CC=CCO",
+    "conditions": "NaBH4, CeCl3, MeOH",
+    "difficulty": "medium",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: reduction\nReactants: CC=CC=O\nConditions: NaBH4, CeCl3, MeOH\nDifficulty: medium\nProvide the product SMILES.",
+    "target_text": "CC=CCO",
+    "reaction_key": "CC=CC=O>>CC=CCO"
+  },
+  {
+    "id": "rxn_0025",
+    "reaction_type": "Friedel-Crafts",
+    "reactants_smiles": [
+      "c1ccccc1",
+      "CCCl"
+    ],
+    "product_smiles": "CCc1ccccc1",
+    "conditions": "AlCl3, 25°C",
+    "difficulty": "easy",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: Friedel-Crafts\nReactants: c1ccccc1 + CCCl\nConditions: AlCl3, 25°C\nDifficulty: easy\nProvide the product SMILES.",
+    "target_text": "CCc1ccccc1",
+    "reaction_key": "c1ccccc1.CCCl>>CCc1ccccc1"
+  },
+  {
+    "id": "rxn_0026",
+    "reaction_type": "hydrolysis",
+    "reactants_smiles": [
+      "CC(=O)Oc1ccccc1"
+    ],
+    "product_smiles": "OC(=O)c1ccccc1",
+    "conditions": "NaOH, H2O, reflux, 4h",
+    "difficulty": "medium",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: hydrolysis\nReactants: CC(=O)Oc1ccccc1\nConditions: NaOH, H2O, reflux, 4h\nDifficulty: medium\nProvide the product SMILES.",
+    "target_text": "OC(=O)c1ccccc1",
+    "reaction_key": "CC(=O)Oc1ccccc1>>OC(=O)c1ccccc1"
+  },
+  {
+    "id": "rxn_0027",
+    "reaction_type": "Heck",
+    "reactants_smiles": [
+      "Brc1ccccc1",
+      "C=Cc1ccccc1"
+    ],
+    "product_smiles": "c1ccc(C=Cc2ccccc2)cc1",
+    "conditions": "Pd(OAc)2, PPh3, Et3N, DMF, 100°C",
+    "difficulty": "hard",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: Heck\nReactants: Brc1ccccc1 + C=Cc1ccccc1\nConditions: Pd(OAc)2, PPh3, Et3N, DMF, 100°C\nDifficulty: hard\nProvide the product SMILES.",
+    "target_text": "c1ccc(C=Cc2ccccc2)cc1",
+    "reaction_key": "Brc1ccccc1.C=Cc1ccccc1>>c1ccc(C=Cc2ccccc2)cc1"
+  },
+  {
+    "id": "rxn_0028",
+    "reaction_type": "halogenation",
+    "reactants_smiles": [
+      "c1ccccc1"
+    ],
+    "product_smiles": "Brc1ccccc1",
+    "conditions": "Br2, FeBr3, 25°C",
+    "difficulty": "easy",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: halogenation\nReactants: c1ccccc1\nConditions: Br2, FeBr3, 25°C\nDifficulty: easy\nProvide the product SMILES.",
+    "target_text": "Brc1ccccc1",
+    "reaction_key": "c1ccccc1>>Brc1ccccc1"
+  },
+  {
+    "id": "rxn_0029",
+    "reaction_type": "Heck",
+    "reactants_smiles": [
+      "Ic1ccccc1",
+      "CC=C"
+    ],
+    "product_smiles": "CC=Cc1ccccc1",
+    "conditions": "Pd(OAc)2, PPh3, Et3N, DMF, 80°C",
+    "difficulty": "hard",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: Heck\nReactants: Ic1ccccc1 + CC=C\nConditions: Pd(OAc)2, PPh3, Et3N, DMF, 80°C\nDifficulty: hard\nProvide the product SMILES.",
+    "target_text": "CC=Cc1ccccc1",
+    "reaction_key": "Ic1ccccc1.CC=C>>CC=Cc1ccccc1"
+  },
+  {
+    "id": "rxn_0030",
+    "reaction_type": "Mitsunobu",
+    "reactants_smiles": [
+      "OCC1=CC=CC=C1",
+      "OC(=O)CC"
+    ],
+    "product_smiles": "CC(=O)OCC1=CC=CC=C1",
+    "conditions": "PPh3, DEAD, THF, 0°C",
+    "difficulty": "hard",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: Mitsunobu\nReactants: OCC1=CC=CC=C1 + OC(=O)CC\nConditions: PPh3, DEAD, THF, 0°C\nDifficulty: hard\nProvide the product SMILES.",
+    "target_text": "CC(=O)OCC1=CC=CC=C1",
+    "reaction_key": "OCC1=CC=CC=C1.OC(=O)CC>>CC(=O)OCC1=CC=CC=C1"
+  },
+  {
+    "id": "rxn_0031",
+    "reaction_type": "reduction",
+    "reactants_smiles": [
+      "CC(=O)C"
+    ],
+    "product_smiles": "CC(C)O",
+    "conditions": "NaBH4, MeOH, 0°C",
+    "difficulty": "easy",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: reduction\nReactants: CC(=O)C\nConditions: NaBH4, MeOH, 0°C\nDifficulty: easy\nProvide the product SMILES.",
+    "target_text": "CC(C)O",
+    "reaction_key": "CC(=O)C>>CC(C)O"
+  },
+  {
+    "id": "rxn_0032",
+    "reaction_type": "esterification",
+    "reactants_smiles": [
+      "OC(=O)CC(=O)O",
+      "CCO"
+    ],
+    "product_smiles": "CCOC(=O)CC(=O)O",
+    "conditions": "H2SO4 cat., reflux, 4h",
+    "difficulty": "medium",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: esterification\nReactants: OC(=O)CC(=O)O + CCO\nConditions: H2SO4 cat., reflux, 4h\nDifficulty: medium\nProvide the product SMILES.",
+    "target_text": "CCOC(=O)CC(=O)O",
+    "reaction_key": "OC(=O)CC(=O)O.CCO>>CCOC(=O)CC(=O)O"
+  },
+  {
+    "id": "rxn_0033",
+    "reaction_type": "Suzuki",
+    "reactants_smiles": [
+      "B(O)(O)c1ccccc1",
+      "Ic1ccccc1"
+    ],
+    "product_smiles": "c1ccc(-c2ccccc2)cc1",
+    "conditions": "Pd(PPh3)4, Na2CO3, toluene, 80°C",
+    "difficulty": "hard",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: Suzuki\nReactants: B(O)(O)c1ccccc1 + Ic1ccccc1\nConditions: Pd(PPh3)4, Na2CO3, toluene, 80°C\nDifficulty: hard\nProvide the product SMILES.",
+    "target_text": "c1ccc(-c2ccccc2)cc1",
+    "reaction_key": "B(O)(O)c1ccccc1.Ic1ccccc1>>c1ccc(-c2ccccc2)cc1"
+  },
+  {
+    "id": "rxn_0034",
+    "reaction_type": "Suzuki",
+    "reactants_smiles": [
+      "B(O)(O)c1ccccc1",
+      "Brc1ccccc1"
+    ],
+    "product_smiles": "c1ccc(-c2ccccc2)cc1",
+    "conditions": "Pd(PPh3)4, Na2CO3, toluene/H2O, 80°C",
+    "difficulty": "hard",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: Suzuki\nReactants: B(O)(O)c1ccccc1 + Brc1ccccc1\nConditions: Pd(PPh3)4, Na2CO3, toluene/H2O, 80°C\nDifficulty: hard\nProvide the product SMILES.",
+    "target_text": "c1ccc(-c2ccccc2)cc1",
+    "reaction_key": "B(O)(O)c1ccccc1.Brc1ccccc1>>c1ccc(-c2ccccc2)cc1"
+  },
+  {
+    "id": "rxn_0035",
+    "reaction_type": "esterification",
+    "reactants_smiles": [
+      "CCCC(=O)O",
+      "CC(C)O"
+    ],
+    "product_smiles": "CCCC(=O)OC(C)C",
+    "conditions": "H2SO4 cat., reflux, 3h",
+    "difficulty": "easy",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: esterification\nReactants: CCCC(=O)O + CC(C)O\nConditions: H2SO4 cat., reflux, 3h\nDifficulty: easy\nProvide the product SMILES.",
+    "target_text": "CCCC(=O)OC(C)C",
+    "reaction_key": "CCCC(=O)O.CC(C)O>>CCCC(=O)OC(C)C"
+  },
+  {
+    "id": "rxn_0036",
+    "reaction_type": "addition",
+    "reactants_smiles": [
+      "C=Cc1ccccc1",
+      "[H][H]"
+    ],
+    "product_smiles": "CCc1ccccc1",
+    "conditions": "Pd/C, H2, 1 atm, rt",
+    "difficulty": "medium",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: addition\nReactants: C=Cc1ccccc1 + [H][H]\nConditions: Pd/C, H2, 1 atm, rt\nDifficulty: medium\nProvide the product SMILES.",
+    "target_text": "CCc1ccccc1",
+    "reaction_key": "C=Cc1ccccc1.[H][H]>>CCc1ccccc1"
+  },
+  {
+    "id": "rxn_0037",
+    "reaction_type": "Grignard",
+    "reactants_smiles": [
+      "CCMgBr",
+      "C=O"
+    ],
+    "product_smiles": "CC(C)O",
+    "conditions": "Et2O, 0°C, then H3O+",
+    "difficulty": "medium",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: Grignard\nReactants: CCMgBr + C=O\nConditions: Et2O, 0°C, then H3O+\nDifficulty: medium\nProvide the product SMILES.",
+    "target_text": "CC(C)O",
+    "reaction_key": "CCMgBr.C=O>>CC(C)O"
+  },
+  {
+    "id": "rxn_0038",
+    "reaction_type": "Suzuki",
+    "reactants_smiles": [
+      "B(O)(O)c1ccccc1",
+      "Brc1ccccc1"
+    ],
+    "product_smiles": "c1ccc(-c2ccccc2)cc1",
+    "conditions": "Pd(dppf)Cl2, K2CO3, dioxane/H2O, 90°C",
+    "difficulty": "hard",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: Suzuki\nReactants: B(O)(O)c1ccccc1 + Brc1ccccc1\nConditions: Pd(dppf)Cl2, K2CO3, dioxane/H2O, 90°C\nDifficulty: hard\nProvide the product SMILES.",
+    "target_text": "c1ccc(-c2ccccc2)cc1",
+    "reaction_key": "B(O)(O)c1ccccc1.Brc1ccccc1>>c1ccc(-c2ccccc2)cc1"
+  },
+  {
+    "id": "rxn_0039",
+    "reaction_type": "addition",
+    "reactants_smiles": [
+      "C=Cc1ccccc1",
+      "BrBr"
+    ],
+    "product_smiles": "BrCC(Br)c1ccccc1",
+    "conditions": "DCM, 0°C",
+    "difficulty": "medium",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: addition\nReactants: C=Cc1ccccc1 + BrBr\nConditions: DCM, 0°C\nDifficulty: medium\nProvide the product SMILES.",
+    "target_text": "BrCC(Br)c1ccccc1",
+    "reaction_key": "C=Cc1ccccc1.BrBr>>BrCC(Br)c1ccccc1"
+  },
+  {
+    "id": "rxn_0040",
+    "reaction_type": "reduction",
+    "reactants_smiles": [
+      "O=C(O)C1=CC=CC=C1"
+    ],
+    "product_smiles": "OCC1=CC=CC=C1",
+    "conditions": "LiAlH4, THF, 0°C→rt",
+    "difficulty": "medium",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: reduction\nReactants: O=C(O)C1=CC=CC=C1\nConditions: LiAlH4, THF, 0°C→rt\nDifficulty: medium\nProvide the product SMILES.",
+    "target_text": "OCC1=CC=CC=C1",
+    "reaction_key": "O=C(O)C1=CC=CC=C1>>OCC1=CC=CC=C1"
+  },
+  {
+    "id": "rxn_0041",
+    "reaction_type": "Swern",
+    "reactants_smiles": [
+      "OC1CCCCC1"
+    ],
+    "product_smiles": "O=C1CCCCC1",
+    "conditions": "DMSO, (COCl)2, Et3N, DCM, -78°C",
+    "difficulty": "hard",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: Swern\nReactants: OC1CCCCC1\nConditions: DMSO, (COCl)2, Et3N, DCM, -78°C\nDifficulty: hard\nProvide the product SMILES.",
+    "target_text": "O=C1CCCCC1",
+    "reaction_key": "OC1CCCCC1>>O=C1CCCCC1"
+  },
+  {
+    "id": "rxn_0042",
+    "reaction_type": "oxidation",
+    "reactants_smiles": [
+      "CC(C)O"
+    ],
+    "product_smiles": "CC(=O)C",
+    "conditions": "Jones reagent, acetone, 0°C",
+    "difficulty": "easy",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: oxidation\nReactants: CC(C)O\nConditions: Jones reagent, acetone, 0°C\nDifficulty: easy\nProvide the product SMILES.",
+    "target_text": "CC(=O)C",
+    "reaction_key": "CC(C)O>>CC(=O)C"
+  },
+  {
+    "id": "rxn_0043",
+    "reaction_type": "Wittig",
+    "reactants_smiles": [
+      "O=Cc1ccccc1",
+      "P(=C)(CC)"
+    ],
+    "product_smiles": "CC=Cc1ccccc1",
+    "conditions": "THF, 0°C→rt",
+    "difficulty": "hard",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: Wittig\nReactants: O=Cc1ccccc1 + P(=C)(CC)\nConditions: THF, 0°C→rt\nDifficulty: hard\nProvide the product SMILES.",
+    "target_text": "CC=Cc1ccccc1",
+    "reaction_key": "O=Cc1ccccc1.P(=C)(CC)>>CC=Cc1ccccc1"
+  },
+  {
+    "id": "rxn_0044",
+    "reaction_type": "amidation",
+    "reactants_smiles": [
+      "CC(=O)Cl",
+      "N"
+    ],
+    "product_smiles": "CC(=O)N",
+    "conditions": "NH3, DCM, 0°C",
+    "difficulty": "easy",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: amidation\nReactants: CC(=O)Cl + N\nConditions: NH3, DCM, 0°C\nDifficulty: easy\nProvide the product SMILES.",
+    "target_text": "CC(=O)N",
+    "reaction_key": "CC(=O)Cl.N>>CC(=O)N"
+  },
+  {
+    "id": "rxn_0045",
+    "reaction_type": "Grignard",
+    "reactants_smiles": [
+      "c1ccccc1MgBr",
+      "CC(=O)O"
+    ],
+    "product_smiles": "CC(C)(O)c1ccccc1",
+    "conditions": "THF, -78°C, then H3O+",
+    "difficulty": "hard",
+    "input_text": "Predict the major organic product of the following reaction.\nReaction type: Grignard\nReactants: c1ccccc1MgBr + CC(=O)O\nConditions: THF, -78°C, then H3O+\nDifficulty: hard\nProvide the product SMILES.",
+    "target_text": "CC(C)(O)c1ccccc1",
+    "reaction_key": "c1ccccc1MgBr.CC(=O)O>>CC(C)(O)c1ccccc1"
+  }
+]

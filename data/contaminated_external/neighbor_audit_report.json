@@ -1,0 +1,28 @@
+{
+  "id_overlap": {
+    "train_external": 0,
+    "eval_external": 0
+  },
+  "full_reaction_overlap": {
+    "train_external": 3,
+    "eval_external": 82,
+    "overlapping_ids": {
+      "train": [
+        "rxn_0021",
+        "rxn_0041",
+        "rxn_0017"
+      ],
+      "external": [
+        "rxn_0081",
+        "rxn_0089",
+        "rxn_0144"
+      ]
+    }
+  },
+  "reactant_overlap": {
+    "train_external": 9,
+    "eval_external": 76
+  },
+  "product_overlap": 11,
+  "verdict": "LEAK_FOUND"
+}

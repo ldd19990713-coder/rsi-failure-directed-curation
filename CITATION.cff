@@ -1,0 +1,48 @@
+cff-version: 1.2.0
+title: "Failure-Directed Data Curation for Few-Shot Reaction Product Prediction"
+message: >
+  If you use this software, please cite it using the metadata from this file.
+type: software
+authors:
+  - family-names: Li
+    given-names: Dong
+    orcid: https://orcid.org/0009-0009-8133-5796
+    affiliation: "Zhejiang Lab, Hangzhou, China"
+  - family-names: Wei
+    given-names: Yixiong
+    orcid: https://orcid.org/0009-0006-0747-2897
+    affiliation: "Zhejiang Lab, Hangzhou, China"
+  - family-names: Luo
+    given-names: Shi
+    orcid: https://orcid.org/0009-0002-1424-4105
+    affiliation: "Zhejiang Lab, Hangzhou, China"
+  - family-names: Yuan
+    given-names: Yingjun
+    orcid: https://orcid.org/0009-0004-3595-3247
+    affiliation: "Zhejiang Lab, Hangzhou, China"
+contact:
+  - family-names: Li
+    given-names: Dong
+    email: lidong@zhejianglab.org
+    orcid: https://orcid.org/0009-0009-8133-5796
+    affiliation: "Zhejiang Lab, Hangzhou, China"
+repository-code: "[REPO_URL]"
+url: "https://doi.org/[DOI]"
+abstract: >
+  Replication package for the paper "Failure-Directed Data Curation for
+  Few-Shot Reaction Product Prediction: In-Domain Gains under Protocol
+  Fidelity without Cross-Split Generalization" (Li et al., 2026).
+  Includes the v9_g1prime dataset (46 train / 97 eval), clean hold-out
+  set (n=31, reaction-key-disjoint), locked recipe configuration
+  (Qwen2.5-7B + LoRA, bf16), and all training / evaluation / mechanism
+  validation scripts.
+keywords:
+  - recursive self-improvement
+  - data-centric AI
+  - failure-directed curation
+  - few-shot learning
+  - chemical reaction prediction
+  - evaluation integrity
+license: MIT
+version: 1.0.0
+date-released: "2026-11-20"

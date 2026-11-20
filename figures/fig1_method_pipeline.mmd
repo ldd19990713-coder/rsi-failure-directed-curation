@@ -1,0 +1,52 @@
+%% Figure 1: Method pipeline (Mermaid source)
+%% Render to PDF / SVG / PNG via:
+%%   ./figures/render_fig1.sh
+%% Requires mermaid-cli (mmdc): npm install -g @mermaid-js/mermaid-cli
+flowchart TD
+    subgraph Layer1["Layer I — Why"]
+        L1["When does recursive fine-tuning yield auditable bounded gains?"]
+    end
+
+    subgraph Layer2["Layer II — What"]
+        L2["Failure-directed data curation in few-shot chemistry"]
+    end
+
+    subgraph Layer3["Layer III — How"]
+        L3["Fixed split, recipe lock, pre-registered contrasts"]
+    end
+
+    Layer1 --> Layer2 --> Layer3
+
+    subgraph Loop["Failure-Directed Curation Loop"]
+        Train["Train (LoRA)"] --> Eval["Evaluate (Split)"]
+        Eval --> Fail["Identify Failures"]
+        Fail --> Curate["Curate A_fail"]
+        Curate --> AugTrain["Augment & Train"]
+        AugTrain --> Train
+    end
+
+    Layer3 --> Loop
+
+    Control["Control: A_rand (same pool, random; nominal K-matched)"] -.-> Loop
+
+    subgraph Gates["Evaluation Gates"]
+        direction LR
+        RQ1["In-Split (RQ1)<br/>46 train, 97 eval<br/>A_fail vs A_rand<br/>Result: +66.60pp ✓"]
+        RQ2["Neg. Ctrl (RQ2)<br/>M3: Rollback<br/>P2a: Scaling<br/>P1: LR decay<br/>Result: All fail ✗"]
+        RQ3["Hold-Out (RQ3)<br/>31 samples, key-disjoint<br/>Base + LoRA<br/>Result: 0% / 0% ✗"]
+    end
+
+    Loop --> Gates
+
+    subgraph Verdict["Verdict"]
+        V["Bounded data-centric refinement:<br/>effective in-domain, NOT cross-split"]
+    end
+
+    Gates --> Verdict
+
+    style Layer1 fill:#e1f5fe
+    style Layer2 fill:#fff3e0
+    style Layer3 fill:#e8f5e9
+    style Loop fill:#f3e5f5
+    style Gates fill:#fafafa
+    style Verdict fill:#ffebee

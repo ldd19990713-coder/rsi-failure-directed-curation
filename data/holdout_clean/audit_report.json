@@ -1,0 +1,21 @@
+{
+  "id_overlap": {
+    "train_external": 0,
+    "eval_external": 0
+  },
+  "full_reaction_overlap": {
+    "train_external": 0,
+    "eval_external": 0,
+    "total": 0
+  },
+  "product_overlap": {
+    "train_external": 7,
+    "eval_external": 1
+  },
+  "format_check": {
+    "valid_smiles": 31,
+    "total": 31
+  },
+  "verdict": "PASS",
+  "samples": 31
+}

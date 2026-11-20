@@ -1,0 +1,114 @@
+# V5 G1' Canonical Configuration
+# ============================================
+# This is the FROZEN canonical recipe for G1' baseline reproduction.
+# All parameters must match train_v8_gate.py exactly.
+#
+# Generated: 2026-11-12
+# Script hash: (computed after finalization)
+# ============================================
+
+# Model
+model:
+  name: "Qwen2.5-1.5B"
+  path: "Qwen/Qwen2.5-1.5B"
+  precision: "float32"  # FROZEN: original G1' uses float32
+  trust_remote_code: true
+  gradient_checkpointing: true
+
+# Data
+data:
+  version: "v9_g1prime"
+  train_path: "data/v9_g1prime/train.json"
+  eval_path: "data/v9_g1prime/eval.json"
+  train_samples: 46
+  eval_samples: 97
+
+# Training - V5 Frozen Configuration
+training:
+  # V5 FROZEN PARAMETERS (DO NOT MODIFY)
+  weight_decay: 0.01        # FROZEN
+  eta_min_ratio: 0.1        # FROZEN
+  num_rounds: 7             # FROZEN
+  difficulty_weights:       # FROZEN
+    easy: 1.0
+    medium: 2.0
+    hard: 1.0
+
+  # Base learning rate
+  learning_rate: 5.0e-6
+
+  # LR Schedule: G1' decaying schedule
+  # Formula: lr = 5e-6 * (0.85 ^ (round_num - 2))
+  # Round 1: 5e-6 (no decay for first training)
+  # Round 2: 5e-6 * 0.85^0 = 5e-6
+  # Round 3: 5e-6 * 0.85^1 = 4.25e-6
+  # Round 4: 5e-6 * 0.85^2 = 3.6125e-6
+  # Round 5: 5e-6 * 0.85^3 = 3.0706e-6
+  # Round 6: 5e-6 * 0.85^4 = 2.6100e-6
+  # Round 7: 5e-6 * 0.85^5 = 2.2185e-6
+  lr_schedule: "decaying"
+  lr_decay_factor: 0.85
+
+  # Batch configuration
+  batch_size: 2             # FROZEN: direct batch=2 (NOT gradient accumulation)
+  max_length: 256
+
+  # Epochs per round
+  epochs_per_round: 3
+
+  # Optimizer
+  optimizer: "AdamW"
+  grad_clip_norm: 1.0
+
+# Augmentation - G1' Frozen Configuration
+augmentation:
+  # 5 prompt-only variants (NO noise tokens)
+  types:
+    - "condition_variant"
+    - "hint_variant"
+    - "format_variant"
+    - "synonym_variant"
+    - "context_variant"
+
+  # Variant count per difficulty
+  num_variants:
+    easy: 2    # use first 2 types
+    medium: 3  # use first 3 types
+    hard: 2    # use first 2 types
+
+  # Augmentation trigger: augment failed cases only
+  trigger: "failed_cases_only"
+
+# Evaluation
+evaluation:
+  metric: "exact_smiles_match"  # HARD GATE: no partial credit
+  max_new_tokens: 100
+  num_beams: 1
+  do_sample: false
+  prompt_format: "输入: {input_text}\n输出:"
+
+# Seeds
+seeds:
+  default: 41
+  g1_validation: [41, 42, 43, 44, 45, 46, 47, 48, 49, 50]  # N=10
+
+# Leakage guards
+leakage:
+  train_eval_disjoint: true   # HARD REQUIREMENT
+  aug_manifest_tracking: true
+  runtime_assertion: true
+
+# Expected results (G1' baseline, N=10)
+expected:
+  peak_accuracy_mean: 0.1443  # 14.43%
+  peak_accuracy_std: 0.0221   # 2.21%
+  peak_accuracy_ci95: [0.1306, 0.1580]
+  seed_41_peak: 0.1753        # 17.53% at R6
+
+# Metadata
+metadata:
+  created: "2026-11-12"
+  version: "v5_g1prime_canonical"
+  source_script: "scripts/train_v8_gate.py"
+  source_data: "v9_g1prime"
+  gpu_requirement: "GPU-40G (A100)"  # float32 requires ~35GB

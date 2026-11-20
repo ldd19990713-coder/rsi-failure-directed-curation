@@ -1,0 +1,44 @@
+{
+  "name": "v9_g1prime_p2_external_smiles_clean",
+  "description": "Clean SMILES external eval set (zero overlap with train\u222aeval)",
+  "sources": [
+    "eval_reactions_100.json",
+    "train_round_2_v2.json",
+    "train_round_3_v2.json",
+    "train_reactions_v2.json",
+    "eval_reactions_100_consistent.json",
+    "train_reactions_expanded.json"
+  ],
+  "samples": 31,
+  "difficulty": {
+    "easy": 13,
+    "medium": 16,
+    "hard": 2
+  },
+  "reaction_types": {
+    "hydrolysis": 3,
+    "Wolff-Kishner": 1,
+    "Grignard": 2,
+    "oxidation": 2,
+    "Friedel-Crafts": 4,
+    "Claisen": 1,
+    "Mannich": 2,
+    "nitration": 1,
+    "halogenation": 1,
+    "amidation": 1,
+    "sulfonation": 1,
+    "coupling": 4,
+    "rearrangement": 3,
+    "Wittig": 1,
+    "Suzuki": 1,
+    "aldol": 1,
+    "esterification": 1,
+    "cyclization": 1
+  },
+  "overlap_check": {
+    "v9_g1prime_keys": 127,
+    "clean_keys": 31,
+    "overlap": 0,
+    "note": "Zero overlap confirmed; SMILES format verified"
+  }
+}

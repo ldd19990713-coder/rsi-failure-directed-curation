@@ -1,0 +1,44 @@
+{
+  "name": "v9_g1prime_p2_external",
+  "description": "External eval set for P2 generalization test",
+  "source": "eval_reactions_100.json (IDs not in v9_g1prime)",
+  "samples": 100,
+  "difficulty": {
+    "hard": 20,
+    "easy": 40,
+    "medium": 40
+  },
+  "reaction_types": {
+    "aldol": 4,
+    "oxidation": 7,
+    "Diels-Alder": 4,
+    "amidation": 7,
+    "hydrolysis": 4,
+    "substitution_SN2": 8,
+    "reduction": 8,
+    "Wolff-Kishner": 2,
+    "elimination": 6,
+    "Claisen": 2,
+    "Clemmensen": 1,
+    "Friedel-Crafts": 3,
+    "Grignard": 8,
+    "hydroboration": 3,
+    "esterification": 7,
+    "Suzuki": 1,
+    "Wittig": 1,
+    "addition": 7,
+    "sulfonation": 2,
+    "cyclization": 5,
+    "Swern": 1,
+    "halogenation": 5,
+    "epoxidation": 2,
+    "Mannich": 1,
+    "Baeyer-Villiger": 1
+  },
+  "overlap_check": {
+    "v9_g1prime_ids": 143,
+    "external_ids": 100,
+    "id_overlap": 0,
+    "note": "New IDs only; products/reactants may overlap with v9"
+  }
+}
