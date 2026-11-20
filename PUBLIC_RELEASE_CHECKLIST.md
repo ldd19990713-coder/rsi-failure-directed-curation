@@ -1,4 +1,4 @@
-# Public release checklist (executed 2026-11-20)
+﻿# Public release checklist (executed 2026-11-20)
 
 ## Done locally
 
@@ -19,7 +19,7 @@
 - [ ] `gh auth login` (device code) → create **public** repo
 - [ ] Push `main` + tag `v1.0.0` release
 - [ ] Enable Zenodo↔GitHub → obtain DOI
-- [ ] Replace `[REPO_URL]` / `[DOI]` in README, CITATION.cff, `paper/RSI_paper_v7*.md`
+- [ ] Replace `https://github.com/ldd19990713-coder/rsi-failure-directed-curation` / `[DOI]` in README, CITATION.cff, `paper/RSI_paper_v7*.md`
 
 ## Notes
 

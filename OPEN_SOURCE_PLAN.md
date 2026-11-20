@@ -1,7 +1,7 @@
-# 代码与数据公开方案（Open-Source Disclosure Plan）
+﻿# 代码与数据公开方案（Open-Source Disclosure Plan）
 
 > 本文档为论文 V7 中"Data and Code Availability"章节的执行配套方案。
-> 作者按步骤完成公开后，将所得 URL / DOI 回填至论文的相应占位符 `[REPO_URL]` / `[DOI]` 即可。
+> 作者按步骤完成公开后，将所得 URL / DOI 回填至论文的相应占位符 `https://github.com/ldd19990713-coder/rsi-failure-directed-curation` / `[DOI]` 即可。
 
 ---
 
@@ -172,7 +172,7 @@ authors:
     orcid: https://orcid.org/0009-0004-3595-3247
     affiliation: "Zhejiang Lab"
 message: "If you use this software, please cite it using the metadata from this file."
-repository-code: "[REPO_URL]"
+repository-code: "https://github.com/ldd19990713-coder/rsi-failure-directed-curation"
 url: "[DOI_URL]"
 license: MIT
 version: 1.0.0
@@ -296,7 +296,7 @@ gh release create v1.0.0 \
 
 | 占位符 | 替换为 |
 |:------|:------|
-| `[REPO_URL]` | `https://github.com/<USER>/rsi-failure-directed-curation` |
+| `https://github.com/ldd19990713-coder/rsi-failure-directed-curation` | `https://github.com/<USER>/rsi-failure-directed-curation` |
 | `[DOI]` | `10.5281/zenodo.XXXXXXX` |
 | `[DOI_URL]` | `https://doi.org/10.5281/zenodo.XXXXXXX` |
 
@@ -308,7 +308,7 @@ gh release create v1.0.0 \
 
 ```
 The clean external evaluation set (n=31), recipe hashes, evaluation scripts,
-and the full replication package are publicly available at [REPO_URL]
+and the full replication package are publicly available at https://github.com/ldd19990713-coder/rsi-failure-directed-curation
 (archived DOI: [DOI]). The base model (Qwen2.5-7B) is publicly available on
 Hugging Face.
 ```
@@ -316,7 +316,7 @@ Hugging Face.
 ### 数据与代码可用性（ZH）
 
 ```
-干净外集（n=31）、配方哈希、评测脚本及完整复现代码已公开至 [REPO_URL]
+干净外集（n=31）、配方哈希、评测脚本及完整复现代码已公开至 https://github.com/ldd19990713-coder/rsi-failure-directed-curation
 （归档 DOI：[DOI]）。基座模型（Qwen2.5-7B）可在 Hugging Face 公开获取。
 ```
 
