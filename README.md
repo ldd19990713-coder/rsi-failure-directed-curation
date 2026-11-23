@@ -1,8 +1,9 @@
 # Failure-Directed Data Curation for Few-Shot Reaction Product Prediction
 
-> Replication package for: Li, Wei, Luo & Yuan (2026). *"Failure-Directed Data
-> Curation for Few-Shot Reaction Product Prediction: In-Domain Gains under
-> Protocol Fidelity without Cross-Split Generalization."*
+> Replication package for: Li, Wei, Luo & Yuan (2026). *"Failure-Directed
+> Reaction-Data Curation for Few-Shot Exact-SMILES Product Prediction: In-Domain
+> Gains under a Chemical LLM Evaluation Protocol without Cross-Split
+> Generalization."* (manuscript `paper/RSI_paper_v9.md`)
 
 **Public repository:** https://github.com/ldd19990713-coder/rsi-failure-directed-curation
 
@@ -12,11 +13,12 @@
 
 ## Overview
 
-This repository provides the **complete replication package** for our study on
-bounded, data-centric self-refinement under a recursive self-improvement (RSI)
-agenda. The central question: when does failure-directed data curation
-(augmenting from model errors) produce verifiable gains, and where does it
-fail?
+This repository provides the **complete replication package** for our study of
+**failure-directed reaction-data curation** under a reusable **chemical LLM
+evaluation protocol** (recipe lock, reaction-key leakage audit, pre-registered
+in-split vs hold-out gates). The central question: when does preferentially
+augmenting from model errors produce verifiable **in-domain** gains, and where
+do those gains fail to transfer?
 
 ### Key results (N=5 seeds, Qwen2.5-7B + LoRA, bf16)
 
@@ -134,14 +136,17 @@ rsi-failure-directed-curation/
 │   ├── leakage_audit.py
 │   └── key_disjoint_check.py
 ├── figures/                         (paper figures — source + rendered)
-│   ├── fig1_method_pipeline.mmd
-│   ├── render_fig1.sh
+│   ├── fig1_method_pipeline.{mmd,pdf,png,svg}
+│   ├── render_fig1_fallback.py     (primary Fig.1 renderer)
+│   ├── render_fig1.sh              (optional mermaid-cli path)
 │   ├── figE1_p2a_scaling.{pdf,svg,png}
 │   ├── figE2_m3_rollback.{pdf,svg,png}
 │   └── render_negative_trajectories.py
 ├── paper/
-│   ├── RSI_paper_v7.md             (English)
-│   └── RSI_paper_v7_zh.md          (Chinese)
+│   ├── RSI_paper_v9.md / _zh.md    (latest; JCIM-oriented)
+│   ├── RSI_paper_v8.md / _zh.md
+│   ├── RSI_paper_v7.md / _zh.md
+│   └── JCIM_cover_letter_v9.md
 ├── docs/                            (verdicts, reports, protocols)
 └── OPEN_SOURCE_PLAN.md              (open-source disclosure plan)
 ```
@@ -185,17 +190,19 @@ full locked specification.
 
 ## Figures
 
-Figures in the paper are provided in vector format (PDF/SVG). Source code is
-included for reproducibility:
+Figures are provided as PDF/SVG/PNG. Source scripts are included for
+reproducibility. **Figure 1** in `paper/RSI_paper_v9.md` is aligned to the
+three-layer stack + reaction-data curation loop + RQ1–RQ3 gates.
 
 | Figure | Source | Render command |
 | :----- | :----- | :------------- |
-| Fig 1 (method pipeline) | `figures/fig1_method_pipeline.mmd` | `bash figures/render_fig1.sh` |
+| Fig 1 (method pipeline) | `figures/render_fig1_fallback.py` (+ `.mmd`) | `python figures/render_fig1_fallback.py` |
 | Fig E1 (P2a scaling) | `figures/render_negative_trajectories.py` | `python figures/render_negative_trajectories.py` |
 | Fig E2 (M3 rollback) | `figures/render_negative_trajectories.py` | `python figures/render_negative_trajectories.py` |
 
-Figure 1 requires `mmdc` (`npm install -g @mermaid-js/mermaid-cli`). Figures
-E1/E2 require only `matplotlib` and `numpy`.
+Fig.1 primary path needs only `matplotlib`. Optional Mermaid path:
+`bash figures/render_fig1.sh` (requires `mmdc`). E1/E2 need `matplotlib` +
+`numpy`.
 
 ---
 
@@ -203,11 +210,12 @@ E1/E2 require only `matplotlib` and `numpy`.
 
 ```bibtex
 @article{li2026failure,
-  title={Failure-Directed Data Curation for Few-Shot Reaction Product Prediction:
-         In-Domain Gains under Protocol Fidelity without Cross-Split Generalization},
+  title={Failure-Directed Reaction-Data Curation for Few-Shot Exact-SMILES Product Prediction:
+         In-Domain Gains under a Chemical LLM Evaluation Protocol without Cross-Split Generalization},
   author={Li, Dong and Wei, Yixiong and Luo, Shi and Yuan, Yingjun},
   year={2026},
-  doi={10.5281/zenodo.24391973}
+  doi={10.5281/zenodo.24391973},
+  note={Manuscript paper/RSI_paper_v9.md; replication package}
 }
 ```
 

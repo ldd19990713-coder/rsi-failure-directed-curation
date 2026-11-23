@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: "Failure-Directed Data Curation for Few-Shot Reaction Product Prediction"
+title: "Failure-Directed Reaction-Data Curation for Few-Shot Exact-SMILES Product Prediction"
 message: >
   If you use this software, please cite it using the metadata from this file.
 type: software
@@ -29,14 +29,17 @@ contact:
 repository-code: "https://github.com/ldd19990713-coder/rsi-failure-directed-curation"
 url: "https://doi.org/10.5281/zenodo.24391973"
 abstract: >
-  Replication package for the paper "Failure-Directed Data Curation for
-  Few-Shot Reaction Product Prediction: In-Domain Gains under Protocol
-  Fidelity without Cross-Split Generalization" (Li et al., 2026).
-  Includes the v9_g1prime dataset (46 train / 97 eval), clean hold-out
-  set (n=31, reaction-key-disjoint), locked recipe configuration
-  (Qwen2.5-7B + LoRA, bf16), and all training / evaluation / mechanism
+  Replication package for the paper "Failure-Directed Reaction-Data Curation
+  for Few-Shot Exact-SMILES Product Prediction: In-Domain Gains under a
+  Chemical LLM Evaluation Protocol without Cross-Split Generalization"
+  (Li et al., 2026; manuscript paper/RSI_paper_v9.md). Includes the
+  v9_g1prime dataset (46 train / 97 eval), clean hold-out set (n=31,
+  reaction-key-disjoint), locked recipe configuration (Qwen2.5-7B + LoRA,
+  bf16), paper figures, and all training / evaluation / mechanism
   validation scripts.
 keywords:
+  - reaction-data curation
+  - chemical LLM evaluation protocol
   - recursive self-improvement
   - data-centric AI
   - failure-directed curation
